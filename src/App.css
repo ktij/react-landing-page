@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
-}
+  /* padding: 10%; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  /* display: 'flex'; 
+  justify-content:'center';
+  flex-direction: 'column';
+  align-items: center; */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  /* text-align: center;
+  align-items: center;
+  display: 'flex'; 
+  justify-content:'center';
+  align-items:'center';
+  flex-direction: 'center'; */
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 15vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: left;
+  text-indent: 5em;
+  font-size: calc(14px + 2vmin);
+  color: white;
+  top: 0;
+  position: absolute
+}
+
+
+.App-footer {
+  background-color: #282c34;
+  min-height: 15vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+  font-size: calc(6px + 1vmin);
+  color: white;
+  bottom: 0;
+  position: absolute
+}
+
+.App-subheading {
+  min-height: 5vh;
+  min-width:  100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  font-size: calc(14px + 5vmin);
+  color: black;
+  /* background-color: #ff0000; */
+  /* position: absolute; */
+  /* top: 15% */
+}
+
+.App-body {
+  max-height: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(9px + 2vmin);
+  color: black;
+  /* background-color: #00ff1a; */
+  /* position: fixed;  */
+  /* top: 30% */
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
